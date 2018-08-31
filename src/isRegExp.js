@@ -9,4 +9,4 @@ function isRegExp(regexp) {
     return regexp instanceof RegExp;
 }
 
-export default isRegExp;
+module.exports = isRegExp;

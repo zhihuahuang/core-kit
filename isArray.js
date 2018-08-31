@@ -1,11 +1,14 @@
-'use strict';
+"use strict";
 
-exports.__esModule = true;
 /**
- * Use native isArray first
+ * isArray
+ *
+ * @since 0.1.0
+ * @param arr
+ * @returns {boolean}
  */
+// Use native isArray first
 var isArray = Array.isArray ? Array.isArray : function _isArray(arr) {
   return Object.prototype.toString.call(arr) === '[object Array]';
 };
-
-exports.default = isArray;
+module.exports = isArray;

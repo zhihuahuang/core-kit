@@ -10,4 +10,4 @@ function isObject(obj) {
     return typeof obj === 'object';
 }
 
-export default isObject;
+module.exports = isObject;

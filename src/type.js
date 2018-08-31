@@ -1,11 +1,11 @@
-import isArray from './isArray';
-import isBoolean from "./isBoolean";
-import isFunction from './isFunction';
-import isNull from './isNull';
-import isNumber from './isNumber';
-import isObject from "./isObject";
-import isRegExp from "./isRegExp";
-import isString from './isString';
+const isArray = require('./isArray');
+const isBoolean = require('./isBoolean');
+const isFunction = require('./isFunction');
+const isNull = require('./isNull');
+const isNumber = require('./isNumber');
+const isObject = require('./isObject');
+const isRegExp = require('./isRegExp');
+const isString = require('./isString');
 
 /**
  * Get the type of a variable
@@ -45,4 +45,4 @@ function type(val) {
     }
 }
 
-export default type;
+module.exports = type;

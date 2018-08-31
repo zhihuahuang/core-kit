@@ -1,8 +1,9 @@
 "use strict";
 
-exports.__esModule = true;
 /**
  * isRegExp
+ *
+ * @since 0.1.0
  * @param regexp
  * @returns {boolean}
  */
@@ -10,4 +11,4 @@ function isRegExp(regexp) {
   return regexp instanceof RegExp;
 }
 
-exports.default = isRegExp;
+module.exports = isRegExp;

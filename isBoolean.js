@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-exports.__esModule = true;
 /**
  * isBoolean
- * typeof val is faster than Object.prototype.toString.call(val)
  *
+ * @since 0.1.0
  * @param bool
  * @returns {boolean}
  */
 function isBoolean(bool) {
+  // typeof val is faster than Object.prototype.toString.call(val)
   return typeof bool === 'boolean';
 }
 
-exports.default = isBoolean;
+module.exports = isBoolean;

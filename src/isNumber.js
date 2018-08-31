@@ -10,4 +10,4 @@ function isNumber(num) {
     return typeof num === 'number';
 }
 
-export default isNumber;
+module.exports = isNumber;

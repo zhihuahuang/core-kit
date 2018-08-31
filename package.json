@@ -1,6 +1,6 @@
 {
   "name": "js-kits",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight modular tool library",
   "main": "_.js",
   "scripts": {
@@ -26,10 +26,12 @@
     "url": "https://github.com/zhihuahuang/core-kit/issues"
   },
   "homepage": "https://github.com/zhihuahuang/core-kit#readme",
-  "dependencies": {},
+  "dependencies": {
+    "blueimp-md5": "^2.10.0"
+  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
   }
 }

@@ -11,4 +11,4 @@ const isArray = Array.isArray ? Array.isArray: function _isArray(arr) {
     return Object.prototype.toString.call(arr) === '[object Array]';
 };
 
-export default isArray;
+module.exports = isArray;

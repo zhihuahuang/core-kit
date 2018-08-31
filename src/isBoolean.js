@@ -10,4 +10,4 @@ function isBoolean(bool) {
     return typeof bool === 'boolean';
 }
 
-export default isBoolean;
+module.exports = isBoolean;

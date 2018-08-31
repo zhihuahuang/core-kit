@@ -1,15 +1,15 @@
 "use strict";
 
-exports.__esModule = true;
 /**
  * isNull
- * val === null is faster than Object.prototype.toString.call(val)
  *
+ * @since 0.1.0
  * @param val
  * @returns {boolean}
  */
 function isNull(val) {
+  // val === null is faster than Object.prototype.toString.call(val)
   return val === null;
 }
 
-exports.default = isNull;
+module.exports = isNull;
