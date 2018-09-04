@@ -1,6 +1,6 @@
 {
   "name": "js-kits",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "A lightweight modular tool library",
   "main": "_.js",
   "scripts": {
