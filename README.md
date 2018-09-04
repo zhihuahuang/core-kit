@@ -1,6 +1,8 @@
 # js-kits
 
-A lightweight modular tool library
+A lightweight modular tool library.
+
+Support for browsers and Node.js
 
 ## Type
 
@@ -12,6 +14,7 @@ A lightweight modular tool library
 - `isObject(obj)` : `Boolean`
 - `isRegExp(reg)` : `Boolean`
 - `isString(str)` : `Boolean`
+- `type(val)` : `String`
 
 ## Number
 
@@ -25,3 +28,9 @@ A lightweight modular tool library
 
 - `forEach(arr, handler)` : `undefined`
 - `map(arr, handler)` : `Array`
+
+## Crypto
+
+- `encodeBase64(str)` : `String`
+- `decodeBase64(str)` : `String`
+- `md5` : `String`
