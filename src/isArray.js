@@ -1,14 +1,14 @@
-/**
- * isArray
- *
- * @since 0.1.0
- * @param arr
- * @returns {boolean}
- */
+if (!Array.isArray) {
+    /**
+     * isArray
+     *
+     * @since 0.1.0
+     * @param arg
+     * @returns {boolean}
+     */
+    Array.isArray = function(arg) {
+        return Object.prototype.toString.call(arg) === '[object Array]';
+    };
+}
 
-// Use native isArray first
-const isArray = Array.isArray ? Array.isArray: function _isArray(arr) {
-    return Object.prototype.toString.call(arr) === '[object Array]';
-};
-
-module.exports = isArray;
+module.exports = Array.isArray;
