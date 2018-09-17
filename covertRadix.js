@@ -1,8 +1,9 @@
 "use strict";
 
 /**
- * 进制转换
+ * covertRadix
  *
+ * @since 1.0.0
  * @param number
  * @param fromRadix
  * @param toRadix

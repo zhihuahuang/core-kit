@@ -3,10 +3,11 @@
 /**
  * random(min, max, [isFloat])
  *
- * @return {*}
+ * @since 1.0.1
  * @param min
  * @param max
  * @param isFloat
+ * @return {number}
  */
 function random(min, max, isFloat) {
   if (min === void 0) {

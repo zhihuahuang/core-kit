@@ -1,5 +1,12 @@
 "use strict";
 
+/**
+ * decodeBase64
+ *
+ * @since 1.0.0
+ * @param str
+ * @return {string}
+ */
 var isBrowser = require('./isBrowser');
 
 var decodeBase64;
@@ -15,11 +22,11 @@ if (isBrowser()) {
       return new (TextDecoder || TextDecoderLite)('utf-8').decode(bytes);
     };
   } else {
-    var map = require('./map');
+    require('js-polyfill/Array.prototype.map');
 
     decodeBase64 = function decodeBase64(str) {
       // Going backwards: from bytestream, to percent-encoding, to original string.
-      return decodeURIComponent(map(atob(str).split(''), function (c) {
+      return decodeURIComponent(atob(str).split('').map(function (c) {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
       }).join(''));
     };

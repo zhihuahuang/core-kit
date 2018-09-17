@@ -1,5 +1,12 @@
 "use strict";
 
+/**
+ * encodeBase64
+ *
+ * @since 1.0.0
+ * @param str
+ * @return {string}
+ */
 var isBrowser = require('./isBrowser');
 
 var encodeBase64;

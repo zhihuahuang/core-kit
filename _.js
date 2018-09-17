@@ -14,11 +14,21 @@ var isNumber = require('./isNumber');
 
 var isObject = require('./isObject');
 
+var isPlainObject = require('./isPlainObject');
+
 var isRegExp = require('./isRegExp');
 
 var isString = require('./isString');
 
+var isInteger = require('./isInteger');
+
+var isNaN = require('./isNaN');
+
+var isSafeInteger = require('./isSafeInteger');
+
 var isBrowser = require('./isBrowser');
+
+var noop = require('./noop');
 
 var _ = {
   /* Type */
@@ -28,11 +38,20 @@ var _ = {
   isNull: isNull,
   isNumber: isNumber,
   isObject: isObject,
+  isPlainObject: isPlainObject,
   isRegExp: isRegExp,
   isString: isString,
   type: type,
 
+  /* Number Type */
+  isInteger: isInteger,
+  isNaN: isNaN,
+  isSafeInteger: isSafeInteger,
+
   /* Env */
-  isBrowser: isBrowser
+  isBrowser: isBrowser,
+
+  /* Util */
+  noop: noop
 };
 module.exports = _;

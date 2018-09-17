@@ -18,7 +18,7 @@ var isString = require('./isString');
 /**
  * Get the type of a variable
  *
- * @since 0.1.0
+ * @since 1.0.0
  * @param val
  * @returns string null, number, string, boolean, object, array, function, regexp
  */
@@ -48,10 +48,8 @@ function type(val) {
       return 'regexp';
 
     case isObject(val):
-      return 'object';
-
     default:
-      return '';
+      return 'object';
   }
 }
 

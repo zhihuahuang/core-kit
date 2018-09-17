@@ -1,5 +1,12 @@
 "use strict";
 
+/**
+ * md5
+ *
+ * @since 1.0.0
+ * @param str
+ * @return {string}
+ */
 var isBrowser = require('./isBrowser');
 
 if (isBrowser()) {
