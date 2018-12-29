@@ -16,18 +16,54 @@ Support for browsers and Node.js
 - `isString(str)` : `Boolean`
 - `type(val)` : `String`
 
-## Number
+## Number Type
 
 - `isInteger(num)` : `Boolean`
 - `isNaN(num)` : `Boolean`
 - `isSafeInteger(num)` : `Boolean`
+
+## Number
+
 - `random(min, max, isFloat)` : `Number`
 - `covertRadix(num, fromRadix, toRadix)` : `String`
 
 ## Array
 
+- `chunk(arr, [values])` : `Array`
+- `compact(arr)` : `Array` 
+- `difference` :construction:
 - `forEach(arr, handler)` : `undefined`
 - `map(arr, handler)` : `Array`
+
+## Utils
+
+- `identity` : `*`
+- `constant` : `Function`
+
+### identity(value)
+
+```javascript
+var object = { 'a': 1 };
+ 
+console.log(identity(object) === object);
+// => true
+```
+
+### times(n, [iteratee], [context])
+
+Return `Function`
+
+```javascript
+times(3, String);
+// => ['0', '1', '2']
+ 
+ times(4, _.constant(0));
+// => [0, 0, 0, 0]
+```
+
+
+
+- `times` : ``
 
 ## Crypto
 

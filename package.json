@@ -7,7 +7,8 @@
     "build": "cd lib && babel *.js -d ../",
     "build-browser": "npm run build && browserify _.js -s _ -o dist/_.js",
     "test": "npm run build && mocha test/tests.js",
-    "test-browser": "npm run build-browser && opener test/index.html"
+    "test-browser": "npm run build-browser && opener test/index.html",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",

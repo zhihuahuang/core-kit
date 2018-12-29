@@ -1,18 +1,4 @@
-/*
-describe('', function() {
-
-it(' => true', function() {
-    assert.equal(, true);
-});
-
-it(' => false', function() {
-    assert.equal(, false);
-});
-
-});
-*/
-
-describe('Array', function () {
+describe('Util', function () {
 
     describe('chunk', function() {
 
